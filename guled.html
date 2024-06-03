@@ -11,6 +11,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style.css">
+    <style>
+        /* Add your custom CSS styles for the footer here */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ff0; /* Change color on hover if needed */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -29,8 +59,11 @@
     </header>
     <main>Main content</main>
     <footer> 
-        <ul>
-            <li><a href="https://facebook.com/" target="_blank" rel=" noopen" aria-label="visit our facebook page "><i class="fa-brands fa-facebook-f"></i></a></li>
+        <ul class="social-icons">
+            <li><a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Visit our twitter page"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="Visit our youtube page"><i class="fab fa-youtube"></i></a></li>
         </ul>
     </footer>
     <!-- font awesome -->

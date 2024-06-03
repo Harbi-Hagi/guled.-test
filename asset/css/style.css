@@ -90,7 +90,12 @@ main {
 
  
 footer {
-    background-color: #ffa500;  
+    background-color: white;  
+}
+#social-icons{
+    font-size: 160%;
+    padding: 5%;
+    color: #a3a3a3;
 }
 
  
