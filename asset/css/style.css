@@ -21,6 +21,9 @@ header {
     background-color: lightcoral;
     padding: 1rem;
 }
+h1{
+    font-family: oswald, sans-serifgit;
+}
  
 main {
     background-color: lightblue;
