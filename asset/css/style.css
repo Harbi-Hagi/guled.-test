@@ -16,6 +16,13 @@ body {
     color: #4d4d4d;  
     font-family: 'Lato', sans-serif;
 }
+h1, h2, h3, {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333333;  
+}
+
 
  
 header {
@@ -35,13 +42,7 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #333333;  
-}
-
+ 
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -91,6 +92,21 @@ main {
     height: 600px;
     width: 100%;
     background: url("../image/so\ good\ .jpg") no-repeat center/ cover;
+    position: relative;
+}
+#cover-text{
+    background-color: lightcoral;
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px ;
+    padding: left 10px; 
+}
+#cover-text > h2, #cover-text > h3{
+    color: #ffff;
+
 }
 
  
@@ -161,6 +177,10 @@ footer {
          
         margin-top: 79px;
     }
+}
+#cover-text{
+    width: 300px;
+    right: 50px;
 }
  
 @media screen and (min-width: 992px) {
