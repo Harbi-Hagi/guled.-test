@@ -171,14 +171,73 @@ main {
 }
 
 /* Gallery page styles */
-#gallert-photo {
+.gallery-photo {
     width: 100%;
     line-height: 1em;
 }
 
 #gallery {
-    line-height: 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* Gallery page styles */
+
+ 
+#gallery {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* column   for the images */
+/* Gallery page styles */
+#gallery {
+    padding: 20px;
+    max-width: 1000px; 
+    margin: 0 auto; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    grid-gap: 20px; 
+}
+
+.gallery img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+/* Media query for medium-sized screens */
+@media screen and (min-width: 768px) {
+    #gallery {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  
+}
+
+/* Media query for large screens */
+@media screen and (min-width: 1024px) {
+    #gallery {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));  
+    }
+}
+
+/* Media query for extra-large screens */
+@media screen and (min-width: 1200px) {
+    #gallery {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));  
+    }
+}
+
+
 
 /* Footer styles */
 footer {
@@ -295,6 +354,7 @@ footer {
     }
 }
 
+/* Small screen styles */
 @media only screen and (max-width: 768px) {
     #time div {
         background: url("../image/dublin-city.webp");
@@ -302,4 +362,11 @@ footer {
     }
 }
 
+/* Medium screen styles */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+}
