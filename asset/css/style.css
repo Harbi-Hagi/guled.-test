@@ -153,6 +153,14 @@ main {
     align-items: center;
     justify-content: center;
 }
+/* Gallery page*/
+#gallert-photo{
+    width: 100%;
+    line-height: 1em;
+}
+#gallery{
+    line-height: 0;
+}
 
 footer {
     background-color: #ffffff;
