@@ -1,11 +1,14 @@
+ /* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+/* Resetting default styles */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Body styles */
 body {
     min-height: 100vh;
     display: flex;
@@ -14,16 +17,20 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1,h2,h3 {
+/* Heading styles */
+h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
-.hidden-heading{
+
+/* Utility class to hide headings */
+.hidden-heading {
     display: none;
 }
 
+/* Header styles */
 header {
     background-color: #ffffff;
     padding: 0 1rem;
@@ -36,11 +43,13 @@ header {
     align-items: baseline;
 }
 
+/* Anchor styles */
 header a {
     text-decoration: none;
     color: inherit;
 }
 
+/* Menu styles */
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -51,10 +60,12 @@ header a {
     margin-bottom: 1em;
 }
 
+/* Active menu item style */
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
 
+/* Navigation styles */
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -66,6 +77,7 @@ nav {
     top: 100%;
 }
 
+/* Navigation toggle styles */
 #nav-toggle:checked ~ nav {
     display: block;
 }
@@ -74,21 +86,23 @@ nav {
     display: none;
 }
 
+/* Navigation toggle label styles */
 .nav-toggle-label {
     font-size: 2rem;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .nav-toggle-label i {
-    color: #3a3a3a; 
+    color: #3a3a3a;
 }
 
-
+/* Main content styles */
 main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
+/* Hero section styles */
 #hero {
     height: 600px;
     width: 100%;
@@ -97,7 +111,7 @@ main {
 }
 
 #cover-text {
-    background-color: rgba(241, 109, 107, .7);
+    background-color: rgba(241, 109, 107, 0.7);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -112,6 +126,7 @@ main {
     color: #ffffff;
 }
 
+/* Reasons section styles */
 #reasons {
     width: 90%;
     margin: 20px auto;
@@ -123,6 +138,7 @@ main {
     font-size: 280%;
 }
 
+/* Benefits section styles */
 #benefits-physical > div,
 #benefits-mental > div {
     line-height: 20px;
@@ -139,7 +155,7 @@ main {
 }
 
 #circle-cover-bg {
-    background: url('../image/reasons-image.png') no-repeat top center / cover;
+    background: url('../image/reasons-image.png') no-repeat top center/cover;
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
@@ -153,15 +169,18 @@ main {
     align-items: center;
     justify-content: center;
 }
-/* Gallery page*/
-#gallert-photo{
+
+/* Gallery page styles */
+#gallert-photo {
     width: 100%;
     line-height: 1em;
 }
-#gallery{
+
+#gallery {
     line-height: 0;
 }
 
+/* Footer styles */
 footer {
     background-color: #ffffff;
     padding: 20px 0;
@@ -183,6 +202,7 @@ footer {
     text-decoration: none;
 }
 
+/* Media queries for responsive design */
 @media screen and (min-width: 768px) {
     nav {
         display: block;
@@ -263,18 +283,17 @@ footer {
     }
 
     #time div {
-        background-image: url("../image/dublin-city.webp");  
-        background-size: cover; 
-        background-position: center;  
-        padding: 20px;  
-        margin: 10px;  
-        border-radius: 10px;  
-        color: white;  
-        flex: 1 1 calc(33.333% - 20px);   
+        background-image: url("../image/dublin-city.webp");
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        color: white;
+        flex: 1 1 calc(33.333% - 20px);
         box-sizing: border-box;
     }
 }
-
 
 @media only screen and (max-width: 768px) {
     #time div {
@@ -283,10 +302,4 @@ footer {
     }
 }
 
-
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #time div {
-        background: url("../image/dublin-city.webp");
-        background-size: cover;
-    }
-}
