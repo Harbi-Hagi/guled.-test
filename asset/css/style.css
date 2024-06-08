@@ -16,25 +16,14 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
-/* styling for the body singup */
-/* Styling for the body */
-body {
-    font-family: 'PT Serif', serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
-}
-
-/* Styling for the form */
+ /* styling for the body singup */
 form {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     width: 350px;
+    margin: 0 auto;
 }
 
 /* Styling for labels */
