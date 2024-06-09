@@ -16,6 +16,24 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
+
+#signup {
+    background-image: url("../image/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+#signup-form {
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    top: 150px;
+}
+
+
+
  /* styling for the body singup */
 form {
     background-color: #f9f9f9;
