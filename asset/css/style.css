@@ -17,6 +17,17 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/* Main content */
+main {
+    /* Enlarge main element to push footer down*/
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+}
+
 #signup {
     background-image: url("../image/signup-image.webp");
     background-size: cover;
@@ -196,10 +207,10 @@ nav {
 }
 
 /* Main content styles */
-main {
+/*main {
     flex: 1 0 auto;
     margin-top: 47px;
-}
+}*/
 
 /* Hero section styles */
 #hero {
