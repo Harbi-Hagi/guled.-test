@@ -1,508 +1,507 @@
  /* Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-/* Resetting default styles */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles */
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: #3a3a3a;
-    font-family: 'Lato', sans-serif;
-}
-
-/* Main content */
-main {
-    /* Enlarge main element to push footer down*/
-    flex: 1 0 auto;
-    /* Add margin at the top to prevent content from being covered by the header */
-    margin-top: 47px;
-    /* Enable flex properties for child elements */
-    display: flex;
-    flex-direction: column;
-}
-
-#signup {
-    background-image: url("../image/signup-image.webp");
-    background-size: cover;
-    background-position: 75%;
-    padding: 20px 10% 0 10%;
-    flex-grow: 1;
-}
-
-#signup-form {
-    max-width: 400px;
-    position: absolute;
-    left: 10%;
-    top: 150px;
-}
-
-
-
- /* styling for the body singup */
-form {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    width: 350px;
-    margin: 0 auto;
-}
-
-/* Styling for labels */
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #333; /* Dark gray */
-}
-
-/* Styling for text and email input fields */
-input[type="text"], input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd; /* Light gray */
-    border-radius: 6px;
-    transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus, input[type="email"]:focus {
-    border-color: #4CAF50; /* Green */
-}
-
-/* Styling for the container of radio buttons */
-.radio-buttons {
-    margin-bottom: 20px;
-}
-
-/* Styling for each radio button and its label */
-.radio-buttons div {
-    margin-bottom: 10px;
-}
-
-.radio-buttons input[type="radio"] {
-    display: none;
-}
-
-.radio-buttons label {
-    display: inline-block;
-    padding: 8px 15px;
-    border: 2px solid #4CAF50; /* Green */
-    border-radius: 20px;
-    color: #4CAF50; /* Green */
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.radio-buttons label:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
-}
-
-.radio-buttons input[type="radio"]:checked + label {
-    background-color: #4CAF50; /* Green */
-    color: white;
-}
-
-/* Styling for the submit button */
-input[type="submit"] {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049; /* Darker green */
-}
-
-
-/* Heading styles */
-h1, h2, h3 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
-
-/* Utility class to hide headings */
-.hidden-heading {
-    display: none;
-}
-
-/* Header styles */
-header {
-    background-color: #ffffff;
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-/* Anchor styles */
-header a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Menu styles */
-#menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
-}
-
-#menu > li {
-    margin-bottom: 1em;
-}
-
-/* Active menu item style */
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
-
-/* Navigation styles */
-nav {
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-    top: 100%;
-}
-
-/* Navigation toggle styles */
-#nav-toggle:checked ~ nav {
-    display: block;
-}
-
-#nav-toggle {
-    display: none;
-}
-
-/* Navigation toggle label styles */
-.nav-toggle-label {
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.nav-toggle-label i {
-    color: #3a3a3a;
-}
-
-/* Main content styles */
-/*main {
-    flex: 1 0 auto;
-    margin-top: 47px;
-}*/
-
-/* Hero section styles */
-#hero {
-    height: 600px;
-    width: 100%;
-    background: url("../image/so good .jpg") no-repeat center center/cover;
-    position: relative;
-}
-
-#cover-text {
-    background-color: rgba(241, 109, 107, 0.7);
-    font-size: 130%;
-    position: absolute;
-    bottom: 30px;
-    width: 80%;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
-}
-
-#cover-text > h2,
-#cover-text > h3 {
-    color: #ffffff;
-}
-
-/* Reasons section styles */
-#reasons {
-    width: 90%;
-    margin: 20px auto;
-}
-
-#reasons h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 280%;
-}
-
-/* Benefits section styles */
-#benefits-physical > div,
-#benefits-mental > div {
-    line-height: 20px;
-    margin-bottom: 20px;
-}
-
-#benefits p {
-    padding: 0 20px;
-}
-
-#benefits hr {
-    border-top: 1px solid #3a3a3a;
-    margin: 5px 0;
-}
-
-#circle-cover-bg {
-    background: url('../image/reasons-image.png') no-repeat top center/cover;
-    height: 90vw;
-    width: 90vw;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    max-width: 300px;
-    max-height: 300px;
-}
-
-#benefits-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Gallery page styles */
-.gallery-photo {
-    width: 100%;
-    line-height: 1em;
-}
-
-#gallery {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-/* Gallery page styles */
-
+ /* Resetting default styles */
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
  
-#gallery {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-/* column   for the images */
-/* Gallery page styles */
-#gallery {
-    padding: 20px;
-    max-width: 1000px; 
-    margin: 0 auto; 
-    display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    grid-gap: 20px; 
-}
-
-.gallery img {
-    max-width: 100%; 
-    height: auto; 
-    display: block;
-}
-
-/* Media query for medium-sized screens */
-@media screen and (min-width: 768px) {
-    #gallery {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  
-}
-
-/* Media query for large screens */
-@media screen and (min-width: 1024px) {
-    #gallery {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));  
-    }
-}
-
-/* Media query for extra-large screens */
-@media screen and (min-width: 1200px) {
-    #gallery {
-        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));  
-    }
-}
-
-
-
-/* Footer styles */
-footer {
-    background-color: #ffffff;
-    padding: 20px 0;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-
-.social-icons li {
-    margin: 0 10px;
-}
-
-.social-icons a {
-    font-size: 1.5rem;
-    color: #3a3a3a;
-    text-decoration: none;
-}
-
-/* Media queries for responsive design */
-@media screen and (min-width: 768px) {
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
-
-    #menu {
-        display: flex;
-    }
-
-    #menu > li {
-        padding-left: 1rem;
-    }
-
-    .nav-toggle-label {
-        display: none;
-    }
-
-    #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
-
-    main {
-        margin-top: 79px;
-    }
-
-    #cover-text {
-        width: 300px;
-        right: 50px;
-    }
-
-    #benefits-physical,
-    #benefits-mental {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #benefits-physical > div,
-    #benefits-mental > div {
-        width: 75%;
-    }
-
-    #benefits-mental > div {
-        text-align: end;
-        align-self: flex-end;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    #benefits {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #benefits > div {
-        flex: 1;
-    }
-
-    #benefits-image {
-        order: 0;
-    }
-
-    #time {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #time div {
-        background-image: url("../image/dublin-city.webp");
-        background-size: cover;
-        background-position: center;
-        padding: 20px;
-        margin: 10px;
-        border-radius: 10px;
-        color: white;
-        flex: 1 1 calc(33.333% - 20px);
-        box-sizing: border-box;
-    }
-}
-
-/* Small screen styles */
-@media only screen and (max-width: 768px) {
-    #time div {
-        background: url("../image/dublin-city.webp");
-        background-size: cover;
-    }
-}
-
-/* Medium screen styles */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 10px;
-    }
-}
-
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-
-    /* Form */
-    #signup {
-        background-position: center;
-        position: relative;
-    }
-
-    #signup-form {
-        max-width: 400px;
-        position: absolute;
-        left: 10%;
-        top: 150px;
-    }
-
-    .text-input:hover {
-        border-color: #f16c6b;
-    }
-
-    .join-button:hover {
-        background-color: #fafafa;
-        color: #454b1b;
-    }
-}
+ /* Body styles */
+ body {
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     color: #3a3a3a;
+     font-family: 'Lato', sans-serif;
+ }
+ 
+ /* Main content */
+ main {
+      
+     flex: 1 0 auto;
+       margin-top: 47px;
+      display: flex;
+     flex-direction: column;
+ }
+ 
+ #signup {
+     background-image: url("../image/signup-image.webp");
+     background-size: cover;
+     background-position: 75%;
+     padding: 20px 10% 0 10%;
+     flex-grow: 1;
+ }
+ 
+ #signup-form {
+     max-width: 400px;
+     position: absolute;
+     left: 10%;
+     top: 150px;
+ }
+ 
+ 
+ 
+  /* styling for the body singup */
+ form {
+     background-color: #f9f9f9;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+     width: 350px;
+     margin: 0 auto;
+ }
+ 
+ /* Styling for labels */
+ label {
+     display: block;
+     margin-bottom: 10px;
+     font-weight: bold;
+     color: #333; /* Dark gray */
+ }
+ 
+ /* Styling for text and email input fields */
+ input[type="text"], input[type="email"] {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 20px;
+     border: 1px solid #ddd; /* Light gray */
+     border-radius: 6px;
+     transition: border-color 0.3s ease;
+ }
+ 
+ input[type="text"]:focus, input[type="email"]:focus {
+     border-color: #4CAF50; /* Green */
+ }
+ 
+ /* Styling for the container of radio buttons */
+ .radio-buttons {
+     margin-bottom: 20px;
+ }
+ 
+ /* Styling for each radio button and its label */
+ .radio-buttons div {
+     margin-bottom: 10px;
+ }
+ 
+ .radio-buttons input[type="radio"] {
+     display: none;
+ }
+ 
+ .radio-buttons label {
+     display: inline-block;
+     padding: 8px 15px;
+     border: 2px solid #4CAF50; /* Green */
+     border-radius: 20px;
+     color: #4CAF50; /* Green */
+     cursor: pointer;
+     transition: background-color 0.3s ease, color 0.3s ease;
+ }
+ 
+ .radio-buttons label:hover {
+     background-color: #4CAF50; /* Green */
+     color: white;
+ }
+ 
+ .radio-buttons input[type="radio"]:checked + label {
+     background-color: #4CAF50; /* Green */
+     color: white;
+ }
+ 
+ /* Styling for the submit button */
+ input[type="submit"] {
+     background-color: #4CAF50; /* Green */
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+ 
+ input[type="submit"]:hover {
+     background-color: #45a049; /* Darker green */
+ }
+ 
+ 
+ /* Heading styles */
+ h1, h2, h3 {
+     font-family: 'Oswald', sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     color: #252525;
+ }
+ 
+ /* Utility class to hide headings */
+ .hidden-heading {
+     display: none;
+ }
+ 
+ /* Header styles */
+ header {
+     background-color: #ffffff;
+     padding: 0 1rem;
+     position: fixed;
+     z-index: 99;
+     width: 100%;
+     box-shadow: 0 2px 2px #3a3a3a;
+     display: flex;
+     justify-content: space-between;
+     align-items: baseline;
+ }
+ 
+ /* Anchor styles */
+ header a {
+     text-decoration: none;
+     color: inherit;
+ }
+ 
+ /* Menu styles */
+ #menu {
+     font-size: 110%;
+     letter-spacing: 4px;
+     list-style-type: none;
+ }
+ 
+ #menu > li {
+     margin-bottom: 1em;
+ }
+ 
+ /* Active menu item style */
+ .active {
+     border-bottom: 1px solid #3a3a3a;
+ }
+ 
+ /* Navigation styles */
+ nav {
+     position: absolute;
+     background-color: #ffffff;
+     width: 100%;
+     left: 0;
+     padding: 0 1rem;
+     box-shadow: 0 2px 2px #3a3a3a;
+     display: none;
+     top: 100%;
+ }
+ 
+ /* Navigation toggle styles */
+ #nav-toggle:checked ~ nav {
+     display: block;
+ }
+ 
+ #nav-toggle {
+     display: none;
+ }
+ 
+ /* Navigation toggle label styles */
+ .nav-toggle-label {
+     font-size: 2rem;
+     cursor: pointer;
+ }
+ 
+ .nav-toggle-label i {
+     color: #3a3a3a;
+ }
+ 
+ /* Main content styles */
+ main {
+     flex: 1 0 auto;
+     margin-top: 47px;
+ }
+ 
+ /* Hero section styles */
+ #hero {
+     height: 600px;
+     width: 100%;
+     background: url("../image/so good .jpg") no-repeat center center/cover;
+     position: relative;
+ }
+ 
+ #cover-text {
+     background-color: rgba(241, 109, 107, 0.7);
+     font-size: 130%;
+     position: absolute;
+     bottom: 30px;
+     width: 80%;
+     min-height: 200px;
+     padding-top: 40px;
+     padding-left: 10px;
+ }
+ 
+ #cover-text > h2,
+ #cover-text > h3 {
+     color: #ffffff;
+ }
+ 
+ /* Reasons section styles */
+ #reasons {
+     width: 90%;
+     margin: 20px auto;
+ }
+ 
+ #reasons h2 {
+     margin-bottom: 20px;
+     text-align: center;
+     font-size: 280%;
+ }
+ 
+ /* Benefits section styles */
+ #benefits-physical > div,
+ #benefits-mental > div {
+     line-height: 20px;
+     margin-bottom: 20px;
+ }
+ 
+ #benefits p {
+     padding: 0 20px;
+ }
+ 
+ #benefits hr {
+     border-top: 1px solid #3a3a3a;
+     margin: 5px 0;
+ }
+ 
+ #circle-cover-bg {
+     background: url('../image/reasons-image.png') no-repeat top center/cover;
+     height: 90vw;
+     width: 90vw;
+     margin-bottom: 20px;
+     border-radius: 50%;
+     max-width: 300px;
+     max-height: 300px;
+ }
+ 
+ #benefits-image {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ /* Gallery page styles */
+ .gallery-photo {
+     width: 100%;
+     line-height: 1em;
+ }
+ 
+ #gallery {
+     padding: 20px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+     justify-content: center;
+ }
+ 
+ .gallery img {
+     width: 100%;
+     height: auto;
+     display: block;
+ }
+ /* Gallery page styles */
+ 
+  
+ #gallery {
+     padding: 20px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+     justify-content: center;
+ }
+ 
+ /* column   for the images */
+ /* Gallery page styles */
+ #gallery {
+     padding: 20px;
+     max-width: 1000px; 
+     margin: 0 auto; 
+     display: grid; 
+     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+     grid-gap: 20px; 
+ }
+ 
+ .gallery img {
+     max-width: 100%; 
+     height: auto; 
+     display: block;
+ }
+ 
+ /* Media query for medium-sized screens */
+ @media screen and (min-width: 768px) {
+     #gallery {
+         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  
+ }
+ 
+ /* Media query for large screens */
+ @media screen and (min-width: 1024px) {
+     #gallery {
+         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));  
+     }
+ }
+ 
+ /* Media query for extra-large screens */
+ @media screen and (min-width: 1200px) {
+     #gallery {
+         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));  
+     }
+ }
+ 
+ 
+ 
+ /* Footer styles */
+ footer {
+     background-color: #ffffff;
+     padding: 20px 0;
+ }
+ 
+ .social-icons {
+     display: flex;
+     justify-content: center;
+     list-style-type: none;
+ }
+ 
+ .social-icons li {
+     margin: 0 10px;
+ }
+ 
+ .social-icons a {
+     font-size: 1.5rem;
+     color: #3a3a3a;
+     text-decoration: none;
+ }
+ 
+ /* Media queries for responsive design */
+ @media screen and (min-width: 768px) {
+     nav {
+         display: block;
+         position: relative;
+         box-shadow: none;
+         width: fit-content;
+         padding-right: 1rem;
+     }
+ 
+     #menu {
+         display: flex;
+     }
+ 
+     #menu > li {
+         padding-left: 1rem;
+     }
+ 
+     .nav-toggle-label {
+         display: none;
+     }
+ 
+     #logo {
+         font-size: 280%;
+         line-height: 75px;
+         margin: 0 0.5rem;
+     }
+ 
+     main {
+         margin-top: 79px;
+     }
+ 
+     #cover-text {
+         width: 300px;
+         right: 50px;
+     }
+ 
+     #benefits-physical,
+     #benefits-mental {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+     }
+ 
+     #benefits-physical > div,
+     #benefits-mental > div {
+         width: 75%;
+     }
+ 
+     #benefits-mental > div {
+         text-align: end;
+         align-self: flex-end;
+     }
+ }
+ 
+ @media screen and (min-width: 992px) {
+     #menu a:hover {
+         border-bottom: 1px solid #3a3a3a;
+     }
+ }
+ 
+ @media screen and (min-width: 1200px) {
+     #benefits {
+         display: flex;
+         flex-direction: row;
+     }
+ 
+     #benefits > div {
+         flex: 1;
+     }
+ 
+     #benefits-image {
+         order: 0;
+     }
+ 
+     #time {
+         display: flex;
+         flex-wrap: wrap;
+     }
+ 
+     #time div {
+         background-image: url("../image/dublin-city.webp");
+         background-size: cover;
+         background-position: center;
+         padding: 20px;
+         margin: 10px;
+         border-radius: 10px;
+         color: white;
+         flex: 1 1 calc(33.333% - 20px);
+         box-sizing: border-box;
+     }
+ }
+ 
+ /* Small screen styles */
+ @media only screen and (max-width: 768px) {
+     #time div {
+         background: url("../image/dublin-city.webp");
+         background-size: cover;
+     }
+ }
+ 
+ /* Medium screen styles */
+ @media only screen and (min-width: 769px) and (max-width: 1024px) {
+     .gallery {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         gap: 10px;
+     }
+ }
+ 
+ /* Media query: tablets and larger (768px and up) */
+ @media screen and (min-width: 768px) {
+ 
+     /* Form */
+     #signup {
+         background-position: center;
+         position: relative;
+     }
+ 
+     #signup-form {
+         max-width: 400px;
+         position: absolute;
+         left: 10%;
+         top: 150px;
+     }
+ 
+     .text-input:hover {
+         border-color: #f16c6b;
+     }
+ 
+     .join-button:hover {
+         background-color: #fafafa;
+         color: #454b1b;
+     }
+ }
+ 
